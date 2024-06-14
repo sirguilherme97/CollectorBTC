@@ -1,0 +1,13 @@
+{
+  "name": "btc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "author": "rgblogic",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "coinkey": "^3.0.0"
+  }
+}
