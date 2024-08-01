@@ -2,26 +2,17 @@
 # Overview
 This Node.js application searches for Bitcoin private keys within specified ranges using parallel processing with Node.js worker threads. It provides real-time progress monitoring and logs results to files.
 
+<image src="https://pbs.twimg.com/media/GQCbY7KXIAEsedu?format=jpg&name=large"/>
+<image src="https://pbs.twimg.com/media/GQCfB4UXUAAsoZU?format=jpg&name=large"/>
+
 # Installation
-Install Node.js:
+`Install Node.js`
+`Clone Repo `
+`npm install`
+`node main.js`
 
-Make sure Node.js is installed on your system. You can download it from nodejs.org and follow the installation instructions.
-Clone and Setup:
-
-bash
-Copiar código
-$ git clone <repository_url>
-$ cd bitcoin-private-key-search
-$ npm install
-# Usage
-Run the application with:
-
-bash
-Copiar código
-$ node main.js
-Instructions
+#Instructions
 Select Complexity Level:
-
 Choose a complexity level (1 to 160) to define the search range.
 Monitor Progress:
 
