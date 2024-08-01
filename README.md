@@ -11,7 +11,7 @@ Use `npm install` para adicionar as bibliotecas<br/>
 Use `node index.js` para rodar o projeto
 
 ### Instruções
-Selecione o Nível de Complexidade do Puzzle (1-160) para definir o intervalo de busca.
+Selecione o Nível de Complexidade do Puzzle (1-160) para definir o puzzle de busca.
 <img src="public/assets/main.png" alt="main"/>
 
 ### Opções
