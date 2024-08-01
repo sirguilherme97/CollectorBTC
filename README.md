@@ -1,36 +1,41 @@
-## Bitcoin Puzzle Key Search Application
-# Overview
-This Node.js application searches for Bitcoin private keys within specified ranges using parallel processing with Node.js worker threads. It provides real-time progress monitoring and logs results to files.
+# RGB LOGIC - Script de Busca de Chaves do Puzzle Bitcoin
 
-<image src="https://pbs.twimg.com/media/GQCbY7KXIAEsedu?format=jpg&name=large"/>
-<image src="https://pbs.twimg.com/media/GQCfB4UXUAAsoZU?format=jpg&name=large"/>
+### Visão Geral
+Este aplicativo Node.js busca por chaves privadas de Bitcoin dentro de intervalos especificados, usando processamento paralelo com threads de trabalho do Node.js. Ele fornece monitoramento de progresso em tempo real e registra os resultados em arquivos.
 
-# Installation
-`Install Node.js`
-`Clone Repo `
-`npm install`
-`node main.js`
+### Instalação
+- Instale o Node.js
+- Clone o repositório
 
-#Instructions
-Select Complexity Level:
-Choose a complexity level (1 to 160) to define the search range.
-Monitor Progress:
+Use `npm install` para adicionar as bibliotecas<br/>
+Use `node index.js` para rodar o projeto
 
-View real-time updates on key search speed and progress.
-Every 10,000 keys searched, a summary displays the current speed and progress.
-Interrupt and Resume:
+### Instruções
+Selecione o Nível de Complexidade do Puzzle (1-160) para definir o intervalo de busca.
+<img src="public/assets/main.png" alt="main"/>
 
-Press Ctrl + C to interrupt the search. Resume by restarting the application and selecting the option to continue from the last checkpoint.
-View Results:
+### Opções
+O Script conta com 3 opções principais, [1] Iniciar Scan do Começo [2] Escolher uma porcentagem Ex: `0.72` e [3] Continuar de uma Chave
+<img src="public/assets/option.png" alt="main"/>
 
-Found Bitcoin private keys and their Wallet Import Format (WIF) are logged to keys.txt.
-The last attempted key is logged to Last_key.txt.
-Features
-Parallel Processing: Utilizes Node.js worker threads for concurrent key searching.
-Real-time Monitoring: Provides live updates on key search status.
-Logging: Logs results and progress for analysis and reference.
-Contributing
-Contributions are welcome! Please report bugs, suggest improvements, or contribute new features via GitHub issues or pull requests.
+### Monitore o Progresso
+Veja atualizações em tempo real sobre a velocidade de busca de chaves e progresso.
+A cada 10.000 chaves buscadas, um resumo atualiza a velocidade e o progresso atual.
 
-License
-This project is licensed under the MIT License.
+### Interrompa e Retome:
+Pressione ` Ctrl + C` para interromper a busca. Para retomar, reinicie o aplicativo e selecione a opção para continuar do último ponto de verificação.
+
+### Continuar
+Para continuar de onde parou, você precisa copiar a chave do arquivo `lastKey.txt` e selecionar a opção '3'. 
+Você deverá adicionar o prefixo `0x` a sua chave
+EX:
+<img src="public/assets/lastKeytxt.png" alt="main"/>
+<img src="public/assets/continue.png" alt="main"/>
+
+### Visualize os Resultados
+As chaves privadas de Bitcoin encontradas e seu formato de importação de carteira (WIF) são registradas no arquivo `keys.txt`
+Com essa chave no formato WIF, você pode criar uma nova carteira importando os fundos da carteira privada encontrada.
+<img src="public/assets/findKeystxt.png" alt="main"/>
+### Multi Thread
+O codigo é capaz de gerar uma nova thread para reforçar a busca.
+<img src="public/assets/thread.png" alt="main"/>
