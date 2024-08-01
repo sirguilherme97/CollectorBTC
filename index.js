@@ -23,7 +23,7 @@ console.log("\x1b[35m"+"\nRGB Logic Collector BTC\t\t\t v1.0.0" + "\x1b[0m");
 console.log("\x1b[35m"+"==============================================="+"\x1b[0m")
 
 rl.question(`\nComplexity Level [${chalk.cyan(1)} - ${chalk.cyan(160)}]: `, (answer) => {
-    if (parseInt(answer) < 1 || parseInt(answer) > 160) {
+    if (parseInt(answer) < 1 || parseInt(answer) > 161) {
         console.log(chalk.red('Error: You need to choose a number between 1 and 160'));
         rl.close();
         return;
@@ -132,3 +132,4 @@ process.on('SIGINT', () => {
     rl.close();
     process.exit();
 });
+
