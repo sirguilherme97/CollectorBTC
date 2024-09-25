@@ -1,4 +1,4 @@
-# RGB LOGIC JS - Script de Busca de Chaves do Puzzle Bitcoin
+# RGB LOGIC JS (РГБЛогика) - Script de Busca de Chaves do Puzzle Bitcoin
 
 ### Visão Geral
 Este aplicativo Node.js busca por chaves privadas de Bitcoin dentro de intervalos especificados, usando processamento paralelo com threads de trabalho do Node.js. Ele fornece monitoramento de progresso em tempo real e registra os resultados em arquivos.
